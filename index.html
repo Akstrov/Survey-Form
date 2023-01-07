@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey about technology</p>
+        </header>
+    
+        <form id="survey-form" action="#" method="post">
+            <label id="name-label" for="name">Name <input placeholder="Enter your name" type="text" name="name" id="name" required></label>
+            <label id="email-label" for="email">Email <input placeholder="Enter your email" type="email" name="email" id="email" required></label>
+            <label id="number-label" for="number">Age <em>(optional)</em> <input placeholder="Enter your age" type="number" name="age" id="number" min="13" max="120"></label>
+            <p>Which option best describes your current role?</p>
+            <select name="status" id="dropdown">
+                <option value="">Select your role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="full-time-learner">Full time learner</option>
+                <option value="no">Prefer not to say</option>
+                <option value="other">other</option>
+            </select>
+            <p>What is your sex?</p>
+            <label for="man"><input value="man" type="radio" name="sex" id="man" checked> man</label>
+            <label for="woman"><input value="woman" type="radio" name="sex" id="woman"> woman</label>
+            <p>What are your favorite technologies? <em>(Check all that apply)</em></p>
+            <label for="node"><input value="node" type="checkbox" name="technologies" id="node"> Node.js</label>
+            <label for="react"><input value="react" type="checkbox" name="technologies" id="react"> React.js</label>
+            <label for="jquery"><input value="jquery" type="checkbox" name="technologies" id="jquery"> JQuery</label>
+            <label for="express"><input value="express" type="checkbox" name="technologies" id="express"> Express</label>
+            <label for="angular"><input value="angular type="checkbox" name="technologies" id="angular"> Angular</label>
+            <label for="asp"><input value="asp" type="checkbox" name="technologies" id="asp"> ASP.Net</label>
+            <label for="other"><input value="other" type="checkbox" name="technologies" id="other"> Others</label>
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
